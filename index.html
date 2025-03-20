@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/image-removebg-preview (4).png">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+                <div class="hamburger-overlay">
+                    <nav class="hamburger-nav">
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Programs</a>
+                        <a href="#scholarships">Scholarships</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="navbar-container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="#">StudyAbroad<span>.com</span></a>
+                    </div>
+                    <nav class="nav-links">
+                        <a class="nav-item" href="index.html">Home</a>
+                        <a class="nav-item" href="#programs">Programs</a>
+                        <a class="nav-item" href="#scholarships">Scholarships</a>
+                        <a class="nav-item" href="about.html">About Us</a>
+                        <a href="contact.html" class="contact-btn">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+            
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content-wrapper">
+                    <!-- Hero Content -->
+                    <div class="hero-content">
+                        <div class="plane-container">
+                            <img src="assets/plane.png" alt="Aeroplane" class="plane">
+                        </div>
+                        
+                        <h1>Your Gateway to Hassle-Free Travel</h1>
+                        <p>Get expert visa assistance and make your travel dreams a reality.</p>
+                        <div class="cta-buttons">
+                            <a href="#services" class="btn">Learn More</a>
+                            <a href="contact.html" class="btn-secondary">Contact Us</a>
+                        </div>
+                        
+                    </div>
+                    <!-- Registration Form -->
+                    <div class="registration-form">
+                        <h2>Register for Visa Assistance</h2>
+                        <form id="registrationForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="country" name="country" required placeholder="Your Country">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="visa-country" name="visa_country" required
+                                    placeholder="Visa Required Country">
+                            </div>
+                            <div class="form-group">
+                                <select id="visa-type" name="visa_type" required>
+                                    <option value="" disabled selected>Select Visa Type</option>
+                                    <option value="Tourist Visa">Tourist Visa</option>
+                                    <option value="Work Visa">Work Visa</option>
+                                    <option value="Student Visa">Student Visa</option>
+                                    <option value="Business Visa">Business Visa</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="globe-container">
+                    <img src="/assets/PinClipart.com_travel-clipart_290936.png" alt="Globe" class="globe">
+                </div>
+            </section>
+
+        </div>
+        </div>
+    </header>
+
+    <section class="visa-services" id="visa-services">
+        <div class="container">
+            <h2 class="section-title">Our Visa Services</h2>
+            <div class="visa-service-cards">
+                <!-- Tourist Visa -->
+                <div class="visa-service-card">
+                    <img src="icons/icons8-tourist-pulsar-color/icons8-tourist-96.png" alt="Tourist Visa">
+                    <div class="service-content">
+                        <h3>Tourist Visa</h3>
+                        <p>Explore the world with ease! Our tourist visa services ensure a smooth and stress-free
+                            application process.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Travel Visa -->
+                <div class="visa-service-card">
+                    <img src="icons/icons8-tour-pulsar-color/icons8-tour-96.png" alt="Travel Visa">
+                    <div class="service-content">
+                        <h3>Travel Visa</h3>
+                        <p>Travel without worries! Get professional guidance for quick and accurate travel visa
+                            approvals.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Transit Visa -->
+                <div class="visa-service-card">
+                    <img src="icons/icons8-in-transit-pulsar-color/icons8-in-transit-96.png" alt="Transit Visa">
+                    <div class="service-content">
+                        <h3>Transit Visa</h3>
+                        <p>Need a stopover visa? Our experts will handle the details to ensure a smooth transition
+                            between flights.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-description">Explore the wide range of services we offer to help you achieve your study
+                abroad dreams.</p>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <img src="icons/icons8-program-pulsar-color/icons8-program-96.png" alt="Programs">
+                    <h3>Study Programs</h3>
+                    <p>Explore a wide range of programs across top universities worldwide.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <img src="icons/icons8-consultation-pulsar-color/icons8-consultation-96.png" alt="Consultation">
+                    <h3>Free Consultation</h3>
+                    <p>Get expert guidance on choosing the right university and course.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <img src="icons/icons8-application-pulsar-color/icons8-application-96.png" alt="Application">
+                    <h3>Application Assistance</h3>
+                    <p>Help with documentation, SOP, LOR, and application submissions.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <img src="icons/icons8-passport-and-tickets-pulsar-color/icons8-passport-and-tickets-96.png"
+                        alt="Visa">
+                    <h3>Visa Guidance</h3>
+                    <p>Complete visa assistance, including interview preparation.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <img src="icons/icons8-country-house-pulsar-color/icons8-country-house-96.png" alt="Accommodation">
+                    <h3>Accommodation Support</h3>
+                    <p>Find the best on-campus and off-campus housing options.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <img src="icons/icons8-valet-pulsar-color/icons8-valet-96.png" alt="Job">
+                    <h3>Internship & Job Support</h3>
+                    <p>Guidance on finding part-time jobs and internship opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brand-partners" class="brand-partners">
+        <div class="container">
+            <h2 class="section-title">Our Global Partners</h2>
+            <div class="brand-marquee">
+                <div class="brand-track">
+                    <div class="brand-slide">
+                        <img src="assets/universities/Oxford-University.png" alt="Oxford University">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/Harvard-Logo.png" alt="Harvard University">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/MIT_logo.png" alt="MIT">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/Stanford_University_Logo.png" alt="Stanford University">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/cambridge-logo.png" alt="Cambridge University">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/Berkeley-logo.png" alt="UC Berkeley">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/Oxford-University.png" alt="Oxford University">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/Harvard-Logo.png" alt="Harvard University">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/MIT_logo.png" alt="MIT">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/Stanford_University_Logo.png" alt="Stanford University">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/cambridge-logo.png" alt="Cambridge University">
+                    </div>
+                    <div class="brand-slide">
+                        <img src="assets/universities/Berkeley-logo.png" alt="UC Berkeley">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Students Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <span class="quote open">“</span>
+                        <p class="testimonial-text">
+                            "Thanks to StudyAbroad.com, I got admission to my dream university! The process was smooth and well-guided."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="image">
+                                <img src="students/student1.jpg" alt="John Doe">
+                            </div>
+                            <div class="author-info">
+                                <h4>John Doe</h4>
+                                <span>Harvard University</span>
+                            </div>
+                        </div>
+                        <span class="quote close">”</span>
+                    </div>
+    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <span class="quote open">“</span>
+                        <p class="testimonial-text">
+                            "The visa assistance and application guidance were exceptional. Highly recommend their services!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="image">
+                                <img src="students/student2.jpg" alt="Jane Smith">
+                            </div>
+                            <div class="author-info">
+                                <h4>Jane Smith</h4>
+                                <span>Oxford University</span>
+                            </div>
+                        </div>
+                        <span class="quote close">”</span>
+                    </div>
+    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <span class="quote open">“</span>
+                        <p class="testimonial-text">
+                            "The team helped me with scholarships and accommodation. Truly life-changing experience!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="image">
+                                <img src="students/student3.jpg" alt="Emily Johnson">
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Johnson</h4>
+                                <span>MIT</span>
+                            </div>
+                        </div>
+                        <span class="quote close">”</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Navigation Buttons -->
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+    
+            <!-- Dot Indicators -->
+            <div class="dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <footer class="footer">
+        <div class="container">
+            <!-- Left Section -->
+            <div class="footer-left">
+                <div class="logo">
+                    <a href="#">StudyAbroad<span>.com</span></a>
+                </div>
+                <p>
+                    Your trusted partner for securing visas to the USA, Canada, and Australia. We offer personalized
+                    guidance, ensuring a smooth application process for tourist, student, and work visas.
+                </p>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Consultant</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Request Callback</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-offices">
+                <h3>Our Offices</h3>
+                <div class="office-item">
+                    <p><span>🇮🇳 Uttar Pradesh Office:</span> B Block, Sector 2, Noida, Uttar Pradesh 201301</p>
+                </div>
+                <div class="office-item">
+                    <p><span>🇺🇸 New York Office:</span> 123 Street, New York, NY 10001</p>
+                </div>
+                <div class="office-item">
+                    <p><span>🇬🇧 London Office:</span> 789 Street, London, UK W1A 1AA</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 StudyAbroad.com. Made with ❤ by Aman Mehta.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        ↑
+    </button>
+
+
+    
+
+<!-- <script>
+    function toggleMenu() {
+    const overlay = document.querySelector('.hamburger-overlay');
+    overlay.classList.toggle('active');
+
+    // Prevent scrolling when menu is open
+    if (overlay.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+}
+
+</script>
+
+    <script>
+        document.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('show'); // Slide down
+            } else {
+                navbar.classList.remove('show'); // Slide up
+            }
+        });
+    </script>
+
+
+<script>
+    // Get the button
+    const backToTopButton = document.getElementById('backToTop');
+
+    // Show the button when scrolled down 300px
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    // Scroll to top when clicked
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+ -->
+
+
+
+</body>
+
+</html>
