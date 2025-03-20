@@ -60,14 +60,14 @@ p{
     left: 2%;
     width: 95%;
     background-color: #242424;
-    z-index: 2000;
+    z-index: 1050;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
-.navbar, .fixed-nav .navbar .show {
+.navbar.show {
     width: 98%;
     left: 1%;
     top: 20px;

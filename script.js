@@ -11,11 +11,10 @@ function toggleMenu() {
 }
 
 document.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.classList.add('show'); // Slide down
+        (document.querySelector('.navbar')).classList.add('show'); // Slide down
     } else {
-        navbar.classList.remove('show'); // Slide up
+        (document.querySelector('.navbar')).classList.remove('show'); // Slide up
     }
 });
 
@@ -38,4 +37,3 @@ const backToTopButton = document.getElementById('backToTop');
         });
     });
 
-    
