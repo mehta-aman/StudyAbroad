@@ -11,6 +11,17 @@ body {
     color: #333;
 }
 
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2000;
+    /* Add other styles as desired */
+}
+.whatsapp-icon img {
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+}
 .container {
     align-content: center;
     align-items: center;
@@ -216,7 +227,6 @@ p{
         transform: rotate(360deg);
     }
 }
-
 
 
 
@@ -1439,6 +1449,10 @@ p{
     }
     .navbar {
         padding: 10px 5%;
+    }
+    .whatsapp-icon img {
+        width: 50px; /* Adjust as needed */
+        height: 50px; /* Adjust as needed */
     }
 
     .nav-links {
